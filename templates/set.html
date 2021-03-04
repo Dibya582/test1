@@ -1,0 +1,20 @@
+{% extends 'post.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+
+{% block body %}
+<h1>Home page</h1>
+
+{% for i in sets %}
+  <h2> {{i.command}}</h2>
+  <h5>{{i.stands}}</h5>
+  <h5>{{i.whatdoes}}</h5>
+  <h5>{{i.example}}</h5>
+{% endfor %}
+
+{% endblock %}
+
+
